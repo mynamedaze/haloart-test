@@ -11,3 +11,22 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+a {
+  text-decoration: none;
+  color: $links-color;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+img {
+  width: 100%;
+}
+body {
+  @media #{$desktop-widths} {
+    background-image: url("../img/bg--desktop.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+}

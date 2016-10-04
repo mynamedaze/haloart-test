@@ -1,0 +1,36 @@
+.information {
+  background-color: yellow;
+  width: 100%;
+}
+.information__wrapper {
+  @include content-center;
+  background-color: pink;
+  display: flex;
+  @media #{$mobile-widths-only} {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media #{$desktop-widths} {
+    max-width: $desktop-width;
+    flex-direction: row;
+  }
+}
+.information__description-field {
+  background-color: chartreuse;
+  @media #{$mobile-widths-only} {
+    width: $mobile-width;
+  }
+}
+.information__title {
+  color: $main-alt-text-color;
+  font-family: 'inglobal', 'Times New Roman', serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: italic;
+}
+.information__form-field {
+  background-color: aquamarine;
+}
+

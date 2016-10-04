@@ -11,73 +11,90 @@
 <body>
   <header class="page-header">
     <h1 class="page-header__title visually-hidden">Haloart-test</h1>
-    <nav class="main-nav">
-      <div class="main-nav__inner">
-        <a href="index.html" class="main-nav__logo">Logo</a>
-        <button class="main-nav__open-close" type="button">Открыть меню/Закрыть меню</button>
+    <nav class="page-header__inner">
+      <div class="main-nav">
+        <div class="main-nav__logo-field">
+          <a href="index.html" class="main-nav__logo">Logo</a>
+        </div>
+        <button class="main-nav__open-close main-nav__open-close--active" type="button">Открыть меню/Закрыть меню</button>
       </div>
-      <ul class="main-nav__list">
+      <ul class="main-nav__list main-nav__list--active">
         <li class="main-nav__item">
           <a class="main-nav__item-link">
             <span class="main-nav__item-name">Описание услуги</span>
-            <img src="#" class="main-nav__item-icon">
+            <div class="main-nav__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28.219" height="27.5" viewBox="0 0 28.219 27.5">
+                <path class="main-nav__svg-icon main-nav__svg-icon--01" d="M292.3,107.375h-13.69c-3.048,0-3.873-1.006-3.873-4.142V89.011a0.806,0.806,0,0,1,1.611,0v14.222c0,2.284.1,2.545,2.262,2.545H292.3c2.167,0,2.569-.261,2.569-2.545V89.011a0.805,0.805,0,0,1,1.61,0v14.222C296.478,106.369,295.347,107.375,292.3,107.375Zm-3.471-.4a0.4,0.4,0,0,1-.4-0.4V99c0-.794-0.154-0.809-1.04-0.809h-3.865c-0.885,0-.732.015-0.732,0.809v7.575a0.4,0.4,0,0,1-.805,0V99c0-1.375.368-1.607,1.537-1.607h3.865c1.17,0,1.845.232,1.845,1.607v7.575A0.4,0.4,0,0,1,288.828,106.976ZM272.168,91.39a0.806,0.806,0,0,1-.644-0.319,0.794,0.794,0,0,1,.159-1.118l13.287-9.914a0.809,0.809,0,0,1,1.127.158,0.793,0.793,0,0,1-.159,1.118l-13.287,9.915A0.8,0.8,0,0,1,272.168,91.39Zm26.572,0a0.807,0.807,0,0,1-.484-0.161L284.97,81.315a0.794,0.794,0,0,1-.16-1.118,0.811,0.811,0,0,1,1.128-.158l13.287,9.914a0.8,0.8,0,0,1,.159,1.118A0.806,0.806,0,0,1,298.74,91.39ZM278.36,95a0.4,0.4,0,0,1-.4-0.4V90.059a0.347,0.347,0,0,1,.082-0.317l5.246-4.017a0.382,0.382,0,0,1,.545.074,0.392,0.392,0,0,1-.008.559l-5.059,3.9V94.6A0.4,0.4,0,0,1,278.36,95Zm0,2a0.4,0.4,0,0,1-.4-0.4V96.2a0.4,0.4,0,0,1,.806,0v0.4A0.4,0.4,0,0,1,278.36,97Z" transform="translate(-271.344 -79.875)"/>
+              </svg>
+            </div>
           </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__item-link">
             <span class="main-nav__item-name">Почему мы?</span>
-            <img src="#" class="main-nav__item-icon">
+            <div class="main-nav__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19.188" height="26.812" viewBox="0 0 19.188 26.812">
+                <path class="main-nav__svg-icon main-nav__svg-icon--02" d="M285.029,149.164c-3.783,0-6.549-6.9-6.549-10.487a6.55,6.55,0,1,1,13.1,0C291.579,142.267,288.813,149.164,285.029,149.164Zm0-15.462a4.969,4.969,0,0,0-4.954,4.975c0,3.107,2.546,8.886,4.954,8.886s4.955-5.779,4.955-8.886A4.97,4.97,0,0,0,285.029,133.7Zm-3.346,5.564a0.4,0.4,0,0,1-.4-0.4,3.988,3.988,0,0,1,3.976-3.992,0.4,0.4,0,0,1,0,.8,3.189,3.189,0,0,0-3.179,3.191A0.4,0.4,0,0,1,281.683,139.266Zm0.139,1.537a0.4,0.4,0,0,1-.283-0.117,0.408,0.408,0,0,1,0-.568,0.411,0.411,0,0,1,.562,0,0.407,0.407,0,0,1,.12.284,0.4,0.4,0,0,1-.12.284A0.384,0.384,0,0,1,281.822,140.8ZM285,158.9c-2.252,0-9.6-.231-9.6-3.2a9.814,9.814,0,0,1,6.8-9.338l0.488-.151,0.341,0.383a2.408,2.408,0,0,0,3.991-.027l0.343-.383,0.489,0.155A9.855,9.855,0,0,1,294.6,155.7C294.6,158.669,287.248,158.9,285,158.9Zm-2.779-10.854a8.219,8.219,0,0,0-5.228,7.652c0,0.44,2.462,1.6,8.007,1.6S293,156.138,293,155.7a8.265,8.265,0,0,0-5.178-7.674A3.854,3.854,0,0,1,282.217,148.046Z" transform="translate(-275.406 -132.094)"/>
+              </svg>
+            </div>
           </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__item-link">
             <span class="main-nav__item-name">Зачем мне это?</span>
-            <img src="#" class="main-nav__item-icon">
+            <div class="main-nav__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="27.219" height="26.25" viewBox="0 0 27.219 26.25">
+                <path class="main-nav__svg-icon main-nav__svg-icon--03" d="M292.193,207.939a2.72,2.72,0,0,1-1.273-.318l-5.435-2.906-5.433,2.906a2.753,2.753,0,0,1-2.8-.149,2.577,2.577,0,0,1-1.1-2.544l1.065-6.315-4.593-4.556a2.526,2.526,0,0,1-.623-2.641,2.631,2.631,0,0,1,2.117-1.732l6.247-.923,2.714-5.6a2.684,2.684,0,0,1,4.8,0l2.714,5.6,6.247,0.923a2.63,2.63,0,0,1,2.117,1.73,2.532,2.532,0,0,1-.622,2.643l-4.594,4.556,1.065,6.317a2.576,2.576,0,0,1-1.095,2.541A2.706,2.706,0,0,1,292.193,207.939Zm-6.708-4.928a0.8,0.8,0,0,1,.381.1l5.814,3.109a1.114,1.114,0,0,0,1.127-.061,0.965,0.965,0,0,0,.42-0.961l-1.134-6.723a0.8,0.8,0,0,1,.225-0.7l4.888-4.847a0.953,0.953,0,0,0,.237-1,1.034,1.034,0,0,0-.834-0.671l-6.668-.985a0.8,0.8,0,0,1-.6-0.443l-2.9-5.976a1.074,1.074,0,0,0-1.905,0l-2.9,5.976a0.8,0.8,0,0,1-.606.443l-6.668.985a1.044,1.044,0,0,0-.834.672,0.95,0.95,0,0,0,.238.993l4.887,4.848a0.792,0.792,0,0,1,.224.7l-1.133,6.722a0.967,0.967,0,0,0,.423.964,1.113,1.113,0,0,0,1.128.057l5.81-3.107A0.8,0.8,0,0,1,285.485,203.011Zm-8.8-9.748a0.4,0.4,0,0,1-.064-0.792l0.266-.043a0.4,0.4,0,1,1,.129.787l-0.267.043A0.345,0.345,0,0,1,276.687,193.263Zm1.474-.237a0.4,0.4,0,0,1-.076-0.79l4.345-.833,1.639-3.734a0.4,0.4,0,0,1,.529-0.206,0.4,0.4,0,0,1,.208.525l-1.724,3.926a0.4,0.4,0,0,1-.292.232l-4.553.873A0.5,0.5,0,0,1,278.161,193.026Z" transform="translate(-271.875 -181.688)"/>
+              </svg>
+            </div>
           </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__item-link">
             <span class="main-nav__item-name">А что есть?</span>
-            <img src="#" class="main-nav__item-icon">
+            <div class="main-nav__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26.812" height="22.375" viewBox="0 0 26.812 22.375">
+                <path class="main-nav__svg-icon main-nav__svg-icon--04" d="M285.5,256.165c-4.707,0-13.4-3.577-13.4-8.675s8.693-8.675,13.4-8.675,13.4,3.577,13.4,8.675S290.207,256.165,285.5,256.165Zm0-15.736c-4.445,0-11.8,3.3-11.8,7.061s7.355,7.061,11.8,7.061,11.8-3.3,11.8-7.061S289.945,240.429,285.5,240.429Zm0,11.365a4.237,4.237,0,1,1,4.2-4.237A4.224,4.224,0,0,1,285.5,251.794Zm0-7.666a3.43,3.43,0,1,0,3.4,3.429A3.418,3.418,0,0,0,285.5,244.128Zm-1.571,2.376a0.4,0.4,0,0,1-.271-0.1,0.407,0.407,0,0,1-.023-0.571,2.6,2.6,0,0,1,.257-0.246,0.4,0.4,0,0,1,.564.055,0.406,0.406,0,0,1-.055.568,1.777,1.777,0,0,0-.177.17A0.4,0.4,0,0,1,283.929,246.5Zm1.571,3.608a2.548,2.548,0,0,1-2.534-2.555,0.4,0.4,0,1,1,.8,0,1.742,1.742,0,0,0,1.734,1.748A0.4,0.4,0,0,1,285.5,250.112Zm-0.05-12.306a0.8,0.8,0,0,1-.8-0.807v-2.42a0.8,0.8,0,1,1,1.6,0V237A0.8,0.8,0,0,1,285.45,237.806Zm-4.609.275a0.8,0.8,0,0,1-.715-0.444l-0.74-1.485a0.809,0.809,0,0,1,.355-1.083,0.8,0.8,0,0,1,1.074.357l0.74,1.485a0.809,0.809,0,0,1-.355,1.083A0.785,0.785,0,0,1,280.841,238.081Zm-4.667,1.871a0.791,0.791,0,0,1-.595-0.268l-1.04-1.167a0.811,0.811,0,0,1,.06-1.14,0.8,0.8,0,0,1,1.13.061l1.04,1.167a0.812,0.812,0,0,1-.061,1.14A0.791,0.791,0,0,1,276.174,239.952Zm13.558-1.871a0.788,0.788,0,0,1-.359-0.087,0.809,0.809,0,0,1-.354-1.083l0.74-1.485a0.794,0.794,0,0,1,1.074-.357,0.809,0.809,0,0,1,.355,1.083l-0.741,1.485A0.8,0.8,0,0,1,289.732,238.081Zm4.668,1.871a0.792,0.792,0,0,1-.535-0.207,0.813,0.813,0,0,1-.06-1.14l1.04-1.167a0.8,0.8,0,0,1,1.13-.061,0.813,0.813,0,0,1,.06,1.14L295,239.684A0.793,0.793,0,0,1,294.4,239.952Z" transform="translate(-272.094 -233.781)"/>
+              </svg>
+            </div>
           </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__item-link">
             <span class="main-nav__item-name">А где?</span>
-            <img src="#" class="main-nav__item-icon">
+            <div class="main-nav__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                <path  class="main-nav__svg-icon main-nav__svg-icon--05" d="M285.633,305.081a9.8,9.8,0,1,1,9.8-9.8A9.811,9.811,0,0,1,285.633,305.081Zm0-18a8.2,8.2,0,1,0,8.2,8.2A8.209,8.209,0,0,0,285.633,287.082Zm-4.706,3.956a0.4,0.4,0,0,1-.273-0.693,6.752,6.752,0,0,1,2.813-1.562,0.4,0.4,0,1,1,.21.771,5.967,5.967,0,0,0-2.479,1.378A0.392,0.392,0,0,1,280.927,291.038Zm-1.662,2.521a0.39,0.39,0,0,1-.134-0.023,0.4,0.4,0,0,1-.243-0.511,6.756,6.756,0,0,1,.414-0.933,0.4,0.4,0,0,1,.7.379,5.91,5.91,0,0,0-.365.822A0.4,0.4,0,0,1,279.265,293.559Zm6.587-3.859a0.8,0.8,0,0,1-.8-0.8v-5.6a0.8,0.8,0,1,1,1.6,0v5.6A0.8,0.8,0,0,1,285.852,289.7Zm0,18.8a0.8,0.8,0,0,1-.8-0.8v-5.6a0.8,0.8,0,0,1,1.6,0v5.6A0.8,0.8,0,0,1,285.852,308.5Zm11.848-12h-5.6a0.8,0.8,0,0,1,0-1.6h5.6A0.8,0.8,0,0,1,297.7,296.5Zm-18.8,0h-5.6a0.8,0.8,0,0,1,0-1.6h5.6A0.8,0.8,0,0,1,278.9,296.5Z" transform="translate(-272.5 -282.5)"/>
+              </svg>
+            </div>
           </a>
         </li>
       </ul>
     </nav>
   </header>
   <section class="intro">
-    <div class="intro__inner">
-      <h2 class="intro__title">Lorem ipsum dolor consectetuer adipiscing sed diam nonummy nibh!</h2>
-    </div>
+    <h2 class="intro__title visually-hidden">Lorem ipsum dolor</h2>
   </section>
   <section class="scroll-field">
     <div class="scroll-field__inner">
-      <div class="scroll-field__content">
-        <img src="#">
-        <span class="scroll-field__text scroll-field__text--go-down">Листай вниз</span>
-      </div>
+      <span class="scroll-field__hr">hr</span>
+      <span class="scroll-field__content scroll-field__content--down"></span>
+      <span class="scroll-field__hr">hr</span>
     </div>
   </section>
   <section class="information">
-    <div class="information__inner">
+    <div class="information__wrapper">
       <div class="information__description-field">
-        <h2 class="information-title">Lorem ipsum dolor sit amet, consectetur</h2>
+        <h2 class="information__title">Lorem ipsum dolor sit amet, consectetur</h2>
         <p class="information__description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       </div>
       <div class="information__form-field">
+        <h2 class="form-apply-send__title"><span>Ut enim ad minim veniam</span>
+          quis nostrud exercitation ullamco laboris</h2>
         <form class="form-apply-send" method="post">
-          <fieldset class="form-apply-send__fieldset">
-            <legend class="form-apply-send__legend"><span>Ut enim ad minim veniam</span>
-              quis nostrud exercitation ullamco laboris</legend>
             <input class="form-apply-send__input form-apply-send__input--text" type="text" name="firstname" id="first-name-field" placeholder="Имя">
             <input class="form-apply-send__input form-apply-send__input--email" type="email" name="email" id="email-field" placeholder="E-mail">
             <input class="form-apply-send__submit-apply" type="submit" name="submit-apply" value="Отправить">
-          </fieldset>
         </form>
         <p class="information__contacts">
           <span class="information__contacts-title">Ut enim ad minim veniam</span>
@@ -89,10 +106,9 @@
   </section>
   <section class="scroll-field">
     <div class="scroll-field__inner">
-      <div class="scroll-field__content">
-        <img src="#">
-        <span class="scroll-field__text scroll-field__text--why">Зачем мне это?</span>
-      </div>
+      <span class="scroll-field__hr">hr</span>
+      <span class="scroll-field__content scroll-field__content--down"></span>
+      <span class="scroll-field__hr">hr</span>
     </div>
   </section>
   <section class="partners">
@@ -112,8 +128,6 @@
   <section class="scroll-field">
     <div class="scroll-field__inner">
       <div class="scroll-field__content">
-        <img src="#">
-        <span class="scroll-field__text scroll-field__text--what">Зачем мне это?</span>
       </div>
     </div>
   </section>
@@ -149,10 +163,7 @@
   </section>
   <section class="scroll-field">
     <div class="scroll-field__inner">
-      <div class="scroll-field__content">
-        <img src="#">
-        <span class="scroll-field__text scroll-field__text--where">А где?</span>
-      </div>
+      <div class="scroll-field__content"></div>
     </div>
   </section>
   <section class="map">

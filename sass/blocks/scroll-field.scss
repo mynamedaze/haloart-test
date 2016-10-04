@@ -1,0 +1,69 @@
+.scroll-field {
+  width: 100%;
+  //background-color: purple;
+}
+.scroll-field__inner {
+  display: flex;
+  flex-direction: row;
+  @include content-center;
+  @media #{$mobile-widths-only} {
+    width: $mobile-width;
+    min-height: 10px;
+  }
+  @media #{$desktop-widths} {
+    max-width: $desktop-width;
+  }
+}
+.scroll-field__hr {
+  flex-grow: 1;
+  text-indent: -10000px;
+  background-image: url("../img/hr-scroll-background.jpg");
+  background-repeat: repeat-x;
+  background-position: 0 center;
+}
+.scroll-field__content {
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include content-center;
+  font-family: 'inglobal', 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 18px;
+  @media #{$mobile-widths-only} {
+    width: 140px;
+  }
+  @media #{$desktop-widths} {
+    width: 180px;
+  }
+}
+.scroll-field__content--down::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-left: 12px;
+  @media #{$mobile-widths-only} {
+    background-image: url("../img/touch_icon--orange.png");
+  }
+  @media #{$desktop-widths} {
+    background-image: url("../img/mouse_icon--orange.svg");
+  }
+  width: 30px;
+  height: 45px;
+}
+.scroll-field__content--down::after {
+
+  width: 70px;
+  color: $main-text-color;
+  margin-left: 10px;
+  @media #{$mobile-widths-only} {
+    content: "Листай вниз";
+  }
+  @media #{$desktop-widths} {
+    content: "Крути вниз";
+  }
+}

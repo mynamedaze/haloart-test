@@ -1,0 +1,11 @@
+.page-header {
+  min-height: 69px;
+  width: 100%;
+}
+.page-header__inner {
+  position: relative;
+  @include content-center;
+  @media #{$desktop-widths} {
+    max-width: 980px;
+  }
+}

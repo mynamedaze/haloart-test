@@ -1,0 +1,18 @@
+.intro {
+  width: 100%;
+  box-sizing: border-box;
+  @media #{$mobile-widths-only} {
+    margin-top: -70px;
+    min-height: 420px;
+    background-image: url("../img/intro__title.png"), url("../img/collage.png");
+    background-repeat: no-repeat;
+    background-position: center 180px, center -48px;
+  }
+  @media #{$desktop-widths} {
+    min-height: 764px;
+    margin-top: -105px;
+    background-image: url("../img/intro__title--desktop.png"), url("../img/collage--desktop.png");
+    background-repeat: no-repeat;
+    background-position: center 250px, center 0;
+  }
+}
