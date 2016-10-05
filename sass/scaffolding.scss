@@ -11,6 +11,14 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  @media #{$desktop-widths} {
+    background-image: url("../img/bg--desktop.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+}
 a {
   text-decoration: none;
   color: $links-color;
@@ -22,11 +30,4 @@ ul {
 }
 img {
   width: 100%;
-}
-body {
-  @media #{$desktop-widths} {
-    background-image: url("../img/bg--desktop.png");
-    background-repeat: no-repeat;
-    background-position: center 0;
-  }
 }

@@ -1,0 +1,173 @@
+.map {
+  margin-top: 25px;
+  background-color: #0694f8;
+  @media #{$desktop-widths} {
+    margin-top: 73px;
+    background-image: url("../img/map__russia--desktop.png");
+    background-repeat: no-repeat;
+    background-position: center 300px;
+  }
+}
+.map__inner {
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  text-align: right;
+  @include content-center;
+  @media #{$mobile-widths-only} {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/map__russia--mobile.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+  @media #{$desktop-widths} {
+    max-width: $desktop-width;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 101px;
+    padding-bottom: 30px;
+    min-height: 700px;
+  }
+}
+.map__adress-field {
+  box-sizing: border-box;
+  @media #{$mobile-widths-only} {
+    width: $mobile-width;
+    min-height: 514px;
+    padding-top: 27px;
+  }
+  @media #{$desktop-widths} {
+    flex-shrink: 1;
+    max-width: 450px;
+  }
+}
+.map__title {
+  font-family: 'inglobal', 'Times New Roman', serif;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 25px;
+  @media #{$desktop-widths} {
+    margin-top: 0px;
+    font-size: 36px;
+  }
+}
+.map__description {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  @media #{$desktop-widths} {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media #{$desktop-widths} {
+    margin-bottom: 20px;
+  }
+}
+.map__paragraph {
+  @media #{$desktop-widths} {
+    position: relative;
+    margin-bottom: 25px;
+  }
+}
+.map__paragraph:not(:last-of-type)::after {
+  display: none;
+  @media #{$desktop-widths} {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: 0;
+    bottom: -12px;
+  }
+}
+.map__adress-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+.map__adress-description {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 50px;
+}
+.map__novgorod--normal {
+  @media #{$desktop-widths} {
+    display: none;
+  }
+}
+.map__novgorod--the-great {
+  @media #{$mobile-widths-only} {
+    display: none;
+  }
+}
+.map__special-br-for-office {
+  @media #{$desktop-widths} {
+    display: none;
+  }
+}
+.map__adress-description--adress {
+  @media #{$mobile-widths-only} {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  @media #{$desktop-widths} {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.map__adress-description--phone {
+  @media #{$desktop-widths} {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.map__adress-description--email {
+  text-decoration: underline;
+  @media #{$desktop-widths} {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.map__googlemap-field {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  background-image: url("../img/map__googlemap--alt.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  @media #{$desktop-widths} {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 490px;
+    height: 380px;
+    border: 10px solid #ffffff;
+    background-image: url("../img/map__googlemap--alt-desktop.jpg");
+    background-position: -195px -16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+.map__googlemap-field::after {
+  display: none;
+  @media #{$desktop-widths} {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 39px;
+    height: 40px;
+    left: 50px;
+    bottom: -50px;
+    background-image: url("../img/triangle.svg");
+    background-repeat: no-repeat;
+  }
+}
+.map__googlemap {
+  z-index: 10;
+  width: 100%;
+  height: 360px;
+}

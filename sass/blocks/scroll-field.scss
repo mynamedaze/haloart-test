@@ -41,29 +41,86 @@
     width: 180px;
   }
 }
-.scroll-field__content--down::before {
+.scroll-field__content::before {
   content: "";
   background-repeat: no-repeat;
   background-position: center center;
-  margin-left: 12px;
+  margin-left: 0px;
+  width: 35px;
+  height: 45px;
+}
+.scroll-field__content::after {
+  width: 80px;
+  margin-left: 6px;
+
+}
+.scroll-field__content--down::before {
+  margin-left: 18px;
   @media #{$mobile-widths-only} {
     background-image: url("../img/touch_icon--orange.png");
   }
   @media #{$desktop-widths} {
     background-image: url("../img/mouse_icon--orange.svg");
   }
-  width: 30px;
-  height: 45px;
 }
 .scroll-field__content--down::after {
-
-  width: 70px;
   color: $main-text-color;
-  margin-left: 10px;
   @media #{$mobile-widths-only} {
     content: "Листай вниз";
   }
   @media #{$desktop-widths} {
     content: "Крути вниз";
+  }
+}
+.scroll-field__content--why::before {
+  @media #{$mobile-widths-only} {
+    background-image: url("../img/touch_icon--blue.png");
+  }
+  @media #{$desktop-widths} {
+    background-image: url("../img/mouse_icon--blue.svg");
+  }
+}
+.scroll-field__content--why::after {
+  color: $main-alt-text-color;
+  @media #{$mobile-widths-only} {
+    content: "Зачем мне это?";
+  }
+  @media #{$desktop-widths} {
+    content: "Зачем мне это?";
+  }
+}
+.scroll-field__content--what::before {
+  @media #{$mobile-widths-only} {
+    background-image: url("../img/touch_icon--blue.png");
+  }
+  @media #{$desktop-widths} {
+    background-image: url("../img/mouse_icon--blue.svg");
+  }
+}
+.scroll-field__content--what::after {
+  color: $main-alt-text-color;
+  @media #{$mobile-widths-only} {
+    content: "А что есть?";
+  }
+  @media #{$desktop-widths} {
+    content: "А что есть?";
+  }
+}
+.scroll-field__content--where::before {
+  margin-left: 20px;
+  @media #{$mobile-widths-only} {
+    background-image: url("../img/touch_icon--orange.png");
+  }
+  @media #{$desktop-widths} {
+    background-image: url("../img/mouse_icon--orange.svg");
+  }
+}
+.scroll-field__content--where::after {
+  color: $main-text-color;
+  @media #{$mobile-widths-only} {
+    content: "А где?";
+  }
+  @media #{$desktop-widths} {
+    content: "А где?";
   }
 }

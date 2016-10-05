@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="5" viewBox="0 0 13 5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0694f8;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="пара" class="cls-1" d="M32.5,2680a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,32.5,2680Zm8,0a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,40.5,2680Z" transform="translate(-30 -2680)"/>
+</svg>

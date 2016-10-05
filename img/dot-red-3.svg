@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff431e;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="мини-группа" class="cls-1" d="M278.5,3400a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,278.5,3400Zm8,0a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,286.5,3400Zm-4-7a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,282.5,3393Z" transform="translate(-276 -3393)"/>
+</svg>

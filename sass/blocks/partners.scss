@@ -1,0 +1,95 @@
+.partners {
+  width: 100%;
+  box-sizing: border-box;
+  @media #{$mobile-widths-only} {
+    min-height: 832px;
+    background-image: url("../img/notebook--mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 32px;
+    margin-bottom: 5px;
+  }
+  @media #{$desktop-widths} {
+    background-image: url("../img/notes--desktop.png"), url("../img/wooden-bg.jpg");
+    background-repeat: no-repeat, repeat-x;
+    background-position: center 51px, center 0;
+    min-height: 1086px;
+    margin-top: 107px;
+    margin-bottom: 46px;
+  }
+}
+.partners__inner {
+  box-sizing: border-box;
+  padding-top: 66px;
+  @include content-center;
+  @media #{$mobile-widths-only} {
+    max-width: $mobile-width;
+  }
+  @media #{$desktop-widths} {
+    max-width: $desktop-width;
+    padding-top: 102px;
+  }
+}
+.partners__trust-text {
+  @include content-center;
+  display: block;
+  text-indent: -10000px;
+  width: 131px;
+  height: 19px;
+  background-image: url("../img/partners__trust.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 270px;
+  @media #{$desktop-widths} {
+    background-image: url("../img/partners__trust--desktop.png");
+    width: 217px;
+    height: 30px;
+    margin-bottom: 470px;
+  }
+}
+.partners__formfield {
+  text-align: center;
+  background-image: url("../img/divider.png");
+  background-repeat: no-repeat;
+  background-position: center 163px;
+  @media #{$desktop-widths} {
+    background-position: center 135px;
+  }
+}
+.partners__my-logo {
+  font-family: 'inglobal', 'Times New Roman', serif;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  @media #{$desktop-widths} {
+    color: #000000;
+    @include content-center;
+    font-size: 24px;
+  }
+}
+.partners__apply-title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 12px;
+  margin-bottom: 0px;
+  @media #{$desktop-widths} {
+    margin-top: 30px;
+  }
+}
+.partners__apply-text {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 40px;
+  @media #{$mobile-widths-only} {
+    width: 200px;
+    @include content-center;
+  }
+  @media #{$desktop-widths} {
+    margin-bottom: 50px;
+  }
+}
+.partners__apply-text-discount {
+  color: $main-text-color;
+  font-weight: 700;
+}

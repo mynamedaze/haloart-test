@@ -88,32 +88,27 @@
   transform: translate(-10px, -1px) rotate(-45deg);
 }
 .main-nav__list {
+  display: none;
+}
+.main-nav__list--active {
+  display: flex;
   position: absolute;
   left: 0;
-  display: none;
   width: 100%;
   background-color: $main-bg;
   box-sizing: border-box;
   @media #{$mobile-widths-only} {
+    flex-direction: column;
+    min-height: 249px;
     top: 70px;
     border-bottom: 1px solid $main-border-color;
   }
   @media #{$desktop-widths} {
-    display: flex;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     top: 0;
     min-height: 120px;
-  }
-}
-.main-nav__list--active {
-  display: flex;
-  @media #{$mobile-widths-only} {
-    flex-direction: column;
-    min-height: 249px;
-  }
-  @media #{$desktop-widths} {
-    justify-content: space-around;
   }
 }
 .main-nav__item {
